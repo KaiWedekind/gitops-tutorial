@@ -7,7 +7,7 @@ metadata:
     flux.weave.works/tag.podinfo: glob:*
     flux.weave.works/automated: 'true'
 spec:
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -26,7 +26,7 @@ metadata:
   name: podinfo-svc
 spec: 
   ports: 
-     -  port: 80
+     -  port: 9898
         protocol: TCP
   selector: 
     app: podinfo
