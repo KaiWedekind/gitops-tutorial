@@ -7,7 +7,7 @@ metadata:
     flux.weave.works/tag.podinfo: glob:*
     flux.weave.works/automated: 'true'
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
@@ -17,7 +17,7 @@ spec:
       - name: podinfo
         image: quay.io/stefanprodan/podinfo:1.5.1
         ports:
-        - containerPort: 3000
+        - containerPort: 9898
 
 ---
 apiVersion: v1
